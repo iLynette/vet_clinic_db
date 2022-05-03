@@ -29,3 +29,8 @@ BEGIN;
 UPDATE animals
 SET species = 'unspecified';
 ROLLBACK;
+
+-- Update the animals table by setting the species column to digimon for all animals that have a name ending in mon.
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
