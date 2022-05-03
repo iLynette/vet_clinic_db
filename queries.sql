@@ -50,3 +50,16 @@ SELECT * FROM animals;
 BEGIN;
 DELETE FROM animals
 WHERE date_of_birth > '2022-01-01';
+
+-- Create a savepoint for the transaction.
+SAVEPOINT SP1;
+
+-- Update all animals' weight to be their weight multiplied by -1.
+-- Rollback to the savepoint, Update all animals' weights that are negative to be their weight multiplied by -1. commit
+UPDATE animals
+SET weight_kg = weight_kg * -1;
+ROLLBACK TO SP1;
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
+COMMIT;
