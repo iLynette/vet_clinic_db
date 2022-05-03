@@ -28,3 +28,4 @@ SELECT * FROM animals WHERE `weight_kg` >= '10.4kg' AND `weight_kg` <= '17.3kg';
 BEGIN;
 UPDATE animals
 SET species = 'unspecified';
+ROLLBACK;
