@@ -81,3 +81,8 @@ FROM animals;
 SELECT neutered, COUNT(escape_attempts) 
 from animals
 GROUP BY neutered;
+
+-- What is the minimum and maximum weight of each type of animal?
+SELECT species, MAX(weight_kg), MIN(weight_kg)
+FROM animals
+GROUP BY species;
