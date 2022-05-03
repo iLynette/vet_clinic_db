@@ -63,3 +63,7 @@ UPDATE animals
 SET weight_kg = weight_kg * -1
 WHERE weight_kg < 0;
 COMMIT;
+
+-- How many animals are there?
+SELECT COUNT(*)
+FROM animals;
