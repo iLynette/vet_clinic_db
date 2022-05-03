@@ -67,3 +67,8 @@ COMMIT;
 -- How many animals are there?
 SELECT COUNT(*)
 FROM animals;
+
+-- How many animals have never tried to escape?
+SELECT COUNT(escape_attempts)
+FROM animals
+WHERE escape_attempts = 0;
