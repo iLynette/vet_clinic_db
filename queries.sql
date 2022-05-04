@@ -123,3 +123,9 @@ WHERE O.full_name = 'Jennifer Orwell' AND animal.species_id = (SELECT id FROM sp
 SELECT animal.name from animals animal
 JOIN owners O ON O.id = animal.owner_id
 WHERE O.full_name = 'Dean Winchester' AND animal.escape_attempts = 0;
+
+-- Who owns the most animals?
+SELECT full_name FROM owners 
+JOIN animals ON  owners.id = animals.owner_id 
+GROUP BY full_name 
+ORDER BY COUNT(name) DESC;
