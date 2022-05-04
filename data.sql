@@ -45,4 +45,11 @@ set owner_id = (
 )
 WHERE name = 'Agumon';
 
+-- Jennifer Orwell owns Gabumon and Pikachu.
+update animals
+set owner_id = (
+    SELECT id from owners WHERE full_name = 'Jennifer Orwell'
+)
+WHERE name IN ('Gabumon', 'Pikachu');
+
 
