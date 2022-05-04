@@ -98,3 +98,8 @@ GROUP BY species;
 SELECT name FROM owners
 JOIN animals ON owners.id= animals.owner_id 
 WHERE full_name='Melody Pond';
+
+-- List of all animals that are pokemon (their type is Pokemon).
+SELECT P.name AS animal_names FROM animals P
+JOIN species S ON S.id = P.species_id
+WHERE S.name = 'Pokemon';
