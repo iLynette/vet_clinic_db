@@ -59,4 +59,12 @@ set owner_id = (
 )
 WHERE name IN ('Devimon', 'Plantmon');
 
+-- Melody Pond owns Charmander, Squirtle, and Blossom.
+update animals
+set owner_id = (
+    SELECT id from owners WHERE full_name = 'Melody Pond'
+)
+WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+
+
 
