@@ -52,4 +52,11 @@ set owner_id = (
 )
 WHERE name IN ('Gabumon', 'Pikachu');
 
+-- Bob owns Devimon and Plantmon.
+update animals
+set owner_id = (
+    SELECT id from owners WHERE full_name = 'Bob'
+)
+WHERE name IN ('Devimon', 'Plantmon');
+
 
