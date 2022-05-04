@@ -66,5 +66,13 @@ set owner_id = (
 )
 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
 
+-- Dean Winchester owns Angemon and Boarmon.
+update animals
+set owner_id = (
+    SELECT id from owners WHERE full_name = 'Dean Winchester'
+)
+WHERE name IN ('Angemon', 'Boarmon');
+
+
 
 
