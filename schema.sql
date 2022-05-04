@@ -9,5 +9,13 @@ CREATE TABLE animals (
     weight_kg NUMERIC
 );
 
+-- Add species column to the animals table
 ALTER TABLE animals
 ADD species VARCHAR(50);
+
+-- Create a table named owners
+CREATE TABLE owners (
+   id INT PRIMARY KEY,
+   full_name VARCHAR(100),
+   age INT
+);
