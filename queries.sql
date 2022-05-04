@@ -91,3 +91,10 @@ GROUP BY species;
 SELECT species, AVG(escape_attempts) from animals
 WHERE date_of_birth >= '1990-01-01' and date_of_birth <= '2000-12-31'
 GROUP BY species;
+
+
+-- Write queries (using JOIN) to answer the following questions:
+-- What animals belong to Melody Pond?
+SELECT name FROM owners
+JOIN animals ON owners.id= animals.owner_id 
+WHERE full_name='Melody Pond';
