@@ -35,6 +35,14 @@ SET species_id = CASE
 	WHEN NAME LIKE '%mon'
     THEN (SELECT id FROM species WHERE name = 'Digimon')
 	ELSE (SELECT id FROM species WHERE name = 'Pokemon')
- END;
+END;
+
+-- Modify your inserted animals to include owner information (owner_id):
+-- Sam Smith owns Agumon.
+update animals
+set owner_id = (
+    SELECT id from owners WHERE full_name = 'Sam Smith'
+)
+WHERE name = 'Agumon';
 
 
