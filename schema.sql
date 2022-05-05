@@ -50,3 +50,11 @@ CREATE TABLE vets (
    age INT,
    date_of_graduation DATE
 );
+
+-- There is a many-to-many relationship between the tables species and vets: a vet can specialize in multiple species, and a species can have multiple vets specialized in it. Create a "join table" called specializations to handle this relationship.
+CREATE TABLE specializations (
+   vet_id INT,
+   species_id INT,
+   FOREIGN KEY (vet_id) REFERENCES vets (id),
+   FOREIGN KEY (species_id) REFERENCES species (id)
+);
