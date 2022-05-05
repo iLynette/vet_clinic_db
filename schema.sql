@@ -41,3 +41,12 @@ ALTER TABLE animals
 ADD owner_id INT;
 ALTER TABLE animals
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+
+-- Create a table named vets with the following columns:
+CREATE TABLE vets (
+   id INT PRIMARY KEY,
+   name VARCHAR(100),
+   age INT,
+   date_of_graduation DATE
+);
