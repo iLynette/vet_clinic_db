@@ -80,5 +80,8 @@ INSERT INTO vets(name, age, date_of_graduation) VALUES ('William Tatcher', 45, '
 -- Vet Maisy Smith is 26 years old and graduated Jan 17th, 2019.
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
 
+-- Vet Stephanie Mendez is 64 years old and graduated May 4th, 1981.
+INSERT INTO vets(name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-04');
+
 
 
