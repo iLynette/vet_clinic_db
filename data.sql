@@ -102,3 +102,8 @@ INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (2, 3, '2020-05-14');
 INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (3, 4, '2021-05-04');
 INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (4, 5, '202-02-24');
 INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (2, 6, '2019-12-21');
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (1, 6, '2020-08-10');
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (2, 6, '2021-04-07');
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (3, 7, '2019-09-29');
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (4, 8, '2020-10-03');
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (4, 8, '2019-11-04');
