@@ -77,6 +77,8 @@ WHERE name IN ('Angemon', 'Boarmon');
 -- Vet William Tatcher is 45 years old and graduated Apr 23rd, 2000.
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('William Tatcher', 45, '2000-4-23');
 
+-- Vet Maisy Smith is 26 years old and graduated Jan 17th, 2019.
+INSERT INTO vets(name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
 
 
 
