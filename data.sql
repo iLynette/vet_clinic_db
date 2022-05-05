@@ -86,5 +86,8 @@ INSERT INTO vets(name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, 
 -- Vet Jack Harkness is 38 years old and graduated Jun 8th, 2008.
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
 
+-- specialization data
+INSERT INTO specializations(vet_id, species_id) VALUES (1,1);
+
 
 
