@@ -59,9 +59,7 @@ CREATE TABLE specializations (
 
 -- There is a many-to-many relationship between the tables animals and vets: an animal can visit multiple vets and one vet can be visited by multiple animals. Create a "join table" called visits to handle this relationship, it should also keep track of the date of the visit.
 CREATE TABLE visits (
-   vet_id INT,
-   animal_id INT,
-   visit_date DATE,
-   FOREIGN KEY (vet_id) REFERENCES vets (id),
-   FOREIGN KEY (animal_id) REFERENCES animals (id)
+   vet_id INT REFERENCES vets(id),
+   animal_id INT REFERENCES animals(id),
+   visit_date DATE 
 );
