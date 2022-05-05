@@ -92,4 +92,6 @@ INSERT INTO specializations(vet_id, species_id) VALUES (3,1);
 INSERT INTO specializations(vet_id, species_id) VALUES (3,2);
 INSERT INTO specializations(vet_id, species_id) VALUES (4,2);
 
+-- Visits data
+INSERT INTO visits (vet_id, animal_id, visit_date) VALUES (1, 1, '2020-05-24');
 
