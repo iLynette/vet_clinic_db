@@ -174,3 +174,10 @@ JOIN vets ON vets.id = visits.vet_id
 WHERE vets.name = 'Maisy Smith'
 ORDER BY visits.visit_date
 LIMIT 1;
+
+-- Details for most recent visit: animal information, vet information, and date of visit.
+SELECT animals.*, visits.visit_date, vets.* FROM animals
+JOIN visits ON animals.id = visits.animal_id 
+JOIN vets ON vets.id = visits.vet_id
+ORDER BY visits.visit_date DESC 
+LIMIT 1;
