@@ -188,3 +188,12 @@ LEFT JOIN specializations ON vets.id = specializations.vet_id
 LEFT JOIN visits ON visits.vet_id = specializations.vet_id
 WHERE specializations.species_id IS NULL
 GROUP BY vets.name, specializations.species_id;
+
+-- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
+SELECT COUNT(A.name) AS animal_visited, S.name as animal_type FROM animals A
+JOIN visits ON A.name = visits.animal_id
+JOIN vets ON vets.id = visits.vet_id
+JOIN species S ON S.id = A.species_id
+WHERE vets.name = 'Maisy Smith'
+GROUP BY S.name
+ORDER BY COUNT(A.name) DESC;
