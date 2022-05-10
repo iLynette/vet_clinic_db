@@ -4,6 +4,10 @@
 
 > This is the database for the vet clinic app which is composed of relational SQL data. There are different tables containing various information for example the animals table contains information about the animals in the clinic.
 
+## Database Diagram
+![EED6EF21-5B74-4DDE-835E-9CD5F2E54B4B](https://user-images.githubusercontent.com/42867002/167636857-b5fb728e-d6d2-483f-88a1-f5ff57407696.png)
+
+
 # Live Demo
 > None
 
